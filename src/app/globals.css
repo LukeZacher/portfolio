@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+
+  --color-canvas: #0c0b10; /* Page background */
+  --color-surface: #16151c; /* Cards, raised areas */
+  --color-line: #28262f; /* Borders, dividers */
+
+  --color-fg: #efe9e1; /* Primary text */
+  --color-fg-soft: #bdb8c2; /* Body paragraphs */
+  --color-fg-muted: #a7a2ab; /* Secondary text */
+  --color-fg-subtle: #8c8792; /* Tertiary text, metadata */
+
+  --color-accent: #ff3d57; /* Neon red, used sparingly */
+  --color-signal: #4fd1a5; /* Focus rings, status */
+}
+
+@theme inline {
+  --font-sans: var(--font-instrument-sans), system-ui, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  --font-display: var(--font-archivo), "Arial Narrow", sans-serif;
+  --font-cjk: var(--font-noto-serif-tc), serif;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+}
