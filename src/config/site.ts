@@ -5,6 +5,7 @@ type SiteConfig = {
   role: string;
   location: string;
   description: string;
+  availableForWork: boolean;
   nav: readonly NavItem[];
 };
 
@@ -14,6 +15,7 @@ export const siteConfig = {
   location: "Omaha, NE",
   description:
     "Full-stack developer in Omaha with degrees in computer science and graphic design, building production web apps with Angular, .NET, and SQL Server.",
+  availableForWork: true,
   nav: [
     { label: "About", href: "/#about" },
     { label: "Experience", href: "/#experience" },
