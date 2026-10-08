@@ -14,6 +14,11 @@
 
   --color-accent: #ff3d57; /* Neon red, used sparingly */
   --color-signal: #4fd1a5; /* Focus rings, status */
+
+  /* Hero name: scales smoothly from 76px on phones to 164px on desktop */
+  --text-hero: clamp(4.75rem, 11.5vw, 10.25rem);
+  --text-hero--line-height: 0.86;
+  --text-hero--letter-spacing: -0.015em;
 }
 
 @theme inline {

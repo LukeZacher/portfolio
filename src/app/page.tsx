@@ -1,3 +1,5 @@
+import { Hero } from "@/features/hero/hero";
+
 export default function HomePage() {
-  return <h1>Luke Zacher</h1>;
+  return <Hero />;
 }
