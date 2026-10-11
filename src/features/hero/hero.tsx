@@ -1,3 +1,4 @@
+import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 
@@ -32,6 +33,13 @@ export function Hero() {
           I build and untangle production software across the stack. Currently
           shipping features on a health-benefits enrollment platform in Omaha.
         </p>
+
+        <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+          <ButtonLink href="/#experience">View experience</ButtonLink>
+          <ButtonLink href="/#contact" variant="text">
+            Get in touch <span aria-hidden="true">→</span>
+          </ButtonLink>
+        </div>
       </Container>
     </section>
   );

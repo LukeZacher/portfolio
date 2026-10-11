@@ -26,6 +26,9 @@
   --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
   --font-display: var(--font-archivo), "Arial Narrow", sans-serif;
   --font-cjk: var(--font-noto-serif-tc), serif;
+
+  --shadow-glow-accent: 0 0 24px
+    color-mix(in oklab, var(--color-accent) 45%, transparent);
 }
 
 @layer base {
