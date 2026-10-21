@@ -3,8 +3,6 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 
 export function Hero() {
-  const nameParts = siteConfig.name.split(" ");
-
   return (
     <section className="pt-16 pb-24 md:pt-36">
       <Container>
@@ -21,12 +19,8 @@ export function Hero() {
           </span>
         </p>
 
-        <h1 className="mt-8 font-display text-hero font-extrabold uppercase font-stretch-condensed">
-          {nameParts.map((part) => (
-            <span key={part} className="block">
-              {part}
-            </span>
-          ))}
+        <h1 className="mt-8 w-min font-display text-hero font-extrabold uppercase font-stretch-condensed">
+          {siteConfig.name}
         </h1>
 
         <p className="mt-9 max-w-md text-lg leading-relaxed text-fg-soft">
