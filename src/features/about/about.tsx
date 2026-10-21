@@ -15,13 +15,13 @@ export function About() {
           first version of a web-based football GM simulation game and am
           excited to showcase it here soon!
         </p>
-        <p>
+        {/* <p>
           Outside of development, I love music and being active. I play the
           piano, drums (very rusty), and really want to become decent at guitar.
           If needed, I can be a playmaking backup point guard for your rec
           league. I&apos;m also a proud former flag football league commissioner
           and two-stripe BJJ white belt for the last three years.
-        </p>
+        </p> */}
 
         <div className="mt-12 max-w-2xl border-t border-line pt-8">
           <h3 className="font-mono text-xs tracking-widest text-fg-muted uppercase">
