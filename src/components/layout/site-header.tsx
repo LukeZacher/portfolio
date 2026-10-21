@@ -1,11 +1,12 @@
 import Link from "next/link";
 
+import { MobileNav } from "@/components/layout/mobile-nav";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 
 export function SiteHeader() {
   return (
-    <header className="pt-10">
+    <header className="relative pt-10">
       <Container className="flex items-center justify-between">
         <Link
           href="/"
@@ -44,6 +45,8 @@ export function SiteHeader() {
             Open to work
           </p>
         )}
+
+        <MobileNav />
       </Container>
     </header>
   );
