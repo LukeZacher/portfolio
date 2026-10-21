@@ -40,4 +40,10 @@
     outline: 2px solid var(--color-signal);
     outline-offset: 4px;
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
 }

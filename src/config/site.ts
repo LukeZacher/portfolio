@@ -1,5 +1,7 @@
 type NavItem = { label: string; href: string };
 
+type SocialLink = { label: string; href: string };
+
 type SiteConfig = {
   name: string;
   role: string;
@@ -7,6 +9,7 @@ type SiteConfig = {
   description: string;
   availableForWork: boolean;
   nav: readonly NavItem[];
+  socials: readonly SocialLink[];
 };
 
 export const siteConfig = {
@@ -21,5 +24,15 @@ export const siteConfig = {
     { label: "Experience", href: "/#experience" },
     { label: "Skills", href: "/#skills" },
     { label: "Contact", href: "/#contact" },
+  ],
+  socials: [
+    {
+      label: "GitHub",
+      href: "https://github.com/LukeZacher",
+    },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/lukezacher",
+    },
   ],
 } as const satisfies SiteConfig;
