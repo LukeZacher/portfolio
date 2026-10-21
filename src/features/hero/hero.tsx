@@ -30,10 +30,9 @@ export function Hero() {
         </h1>
 
         <p className="mt-9 max-w-md text-lg leading-relaxed text-fg-soft">
-          I build and untangle production software across the stack. Currently
-          shipping features on a health-benefits enrollment platform in Omaha.
+          I build and untangle production software across the stack, with a
+          focus on clean, maintainable code and interfaces people enjoy using.
         </p>
-
         <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
           <ButtonLink href="/#experience">View experience</ButtonLink>
           <ButtonLink href="/#contact" variant="text">
