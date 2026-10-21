@@ -1,3 +1,5 @@
+import { MoveUpRight } from "lucide-react";
+
 import { Section } from "@/components/ui/section";
 import { siteConfig } from "@/config/site";
 import { ContactForm } from "@/features/contact/contact-form";
@@ -25,12 +27,10 @@ export function Contact() {
                   className="group inline-flex items-center gap-2 font-mono text-sm text-fg-muted transition-colors hover:text-fg"
                 >
                   {social.label}
-                  <span
+                  <MoveUpRight
                     aria-hidden="true"
-                    className="text-fg-subtle transition-transform motion-safe:group-hover:translate-x-0.5 motion-safe:group-hover:-translate-y-0.5"
-                  >
-                    ↗
-                  </span>
+                    className="size-4 text-fg-subtle transition group-hover:text-fg motion-safe:group-hover:translate-x-0.5 motion-safe:group-hover:-translate-y-0.5"
+                  />
                   <span className="sr-only">(opens in a new tab)</span>
                 </a>
               </li>

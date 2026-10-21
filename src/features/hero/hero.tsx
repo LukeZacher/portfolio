@@ -1,3 +1,5 @@
+import { MoveRight } from "lucide-react";
+
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -27,10 +29,12 @@ export function Hero() {
           I build and untangle production software across the stack, with a
           focus on clean, maintainable code and interfaces people enjoy using.
         </p>
+
         <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
           <ButtonLink href="/#experience">View experience</ButtonLink>
           <ButtonLink href="/#contact" variant="text">
-            Get in touch <span aria-hidden="true">→</span>
+            Get in touch
+            <MoveRight aria-hidden="true" className="size-4" />
           </ButtonLink>
         </div>
       </Container>

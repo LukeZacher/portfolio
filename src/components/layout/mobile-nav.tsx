@@ -1,5 +1,6 @@
 "use client";
 
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
@@ -26,6 +27,8 @@ export function MobileNav() {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [isOpen]);
 
+  const Icon = isOpen ? X : Menu;
+
   return (
     <div className="md:hidden">
       <button
@@ -37,22 +40,7 @@ export function MobileNav() {
         onClick={() => setIsOpen((open) => !open)}
         className="-mr-2.5 grid size-11 place-items-center text-fg"
       >
-        <svg
-          aria-hidden="true"
-          width="22"
-          height="22"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        >
-          {isOpen ? (
-            <path d="M6 6l12 12M18 6L6 18" />
-          ) : (
-            <path d="M4 7h16M4 12h16M10 17h10" />
-          )}
-        </svg>
+        <Icon aria-hidden="true" strokeWidth={1.5} className="size-5.5" />
       </button>
 
       {isOpen ? (
