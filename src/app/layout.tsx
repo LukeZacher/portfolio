@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SkipLink } from "@/components/layout/skip-link";
 import { siteConfig } from "@/config/site";
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main id="main" className="flex-1">
           {children}
         </main>
+        <SiteFooter />
       </body>
     </html>
   );
