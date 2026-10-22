@@ -7,5 +7,6 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
+  "files.eol": "\n",
   "js/ts.preferences.importModuleSpecifier": "non-relative"
 }
