@@ -10,13 +10,13 @@ export function Skills() {
           <div key={group.title}>
             <h3 className="flex items-baseline gap-3 text-xl font-semibold">
               {group.title}
-              <span
+              {/* <span
                 aria-hidden="true"
                 lang="zh-Hant"
                 className="font-cjk text-base font-bold text-fg-subtle"
               >
                 {group.titleZh}
-              </span>
+              </span> */}
             </h3>
             <p className="mt-2 max-w-md leading-relaxed text-fg-soft">
               {group.summary}

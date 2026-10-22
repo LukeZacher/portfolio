@@ -14,6 +14,7 @@ export function Section({
   id,
   index,
   title,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   titleZh,
   className,
   children,
@@ -36,13 +37,13 @@ export function Section({
           <span className="font-display text-4xl font-extrabold uppercase font-stretch-condensed md:text-5xl">
             {title}
           </span>
-          <span
+          {/* <span
             aria-hidden="true"
             lang="zh-Hant"
             className="font-cjk text-xl font-bold text-fg-subtle"
           >
             {titleZh}
-          </span>
+          </span> */}
         </h2>
 
         <div className="mt-12">{children}</div>

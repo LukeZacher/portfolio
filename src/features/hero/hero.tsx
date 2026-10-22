@@ -9,13 +9,13 @@ export function Hero() {
     <section className="pt-16 pb-24 md:pt-36">
       <Container>
         <p className="flex flex-wrap items-center gap-x-3.5 gap-y-2">
-          <span
+          {/* <span
             lang="zh-Hant"
             className="font-cjk text-sm font-bold tracking-widest text-accent"
           >
             全端工程師
           </span>
-          <span aria-hidden="true" className="h-px w-10 bg-line" />
+          <span aria-hidden="true" className="h-px w-10 bg-line" /> */}
           <span className="font-mono text-xs tracking-widest text-fg-muted uppercase">
             {siteConfig.role} — {siteConfig.location}
           </span>
