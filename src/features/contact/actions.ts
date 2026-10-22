@@ -3,7 +3,9 @@
 import { Resend } from "resend";
 import { z } from "zod";
 
+import { isContactRateLimited } from "@/features/contact/rate-limit";
 import { contactSchema, type ContactInput } from "@/features/contact/schema";
+import { getClientIp } from "@/lib/client-ip";
 import { env } from "@/lib/env";
 
 type ContactValues = Record<keyof ContactInput, string>;
@@ -46,6 +48,17 @@ export async function sendContactMessage(
       message: "Please fix the highlighted fields.",
       values,
       fieldErrors: z.flattenError(result.error).fieldErrors,
+    };
+  }
+
+  const visitorIp = await getClientIp();
+
+  if (await isContactRateLimited(visitorIp)) {
+    return {
+      status: "error",
+      message:
+        "Too many messages have been sent recently. Please try again later, or reach out on LinkedIn.",
+      values,
     };
   }
 
