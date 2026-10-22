@@ -1,6 +1,6 @@
 # lukezacher.com
 
-My personal portfolio site, showcasing my experience, skills, and a little about me personally. Projects section coming soon!
+My personal portfolio site, showcasing my experience, skills, and a little about me personally.
 
 **Live:** [lukezacher.com](https://lukezacher.com)
 
