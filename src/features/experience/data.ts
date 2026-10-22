@@ -29,11 +29,11 @@ export const jobs = [
   },
   {
     role: "Digital Marketing & IT Intern",
-    company: "Fidelity Financial Corporation",
+    company: "Fidelity Financial",
     location: "Omaha, NE",
     arrangement: "Hybrid",
     start: "2024-08",
-    end: "2026-03",
+    end: "2025-06",
     highlights: [
       "Built, deployed, and maintained the website for a new nonprofit branch using Angular and .NET.",
       "Designed the new branch's logo, brand identity, and marketing documents.",
@@ -46,10 +46,10 @@ export const jobs = [
     company: "Creighton University",
     location: "Omaha, NE",
     arrangement: "Remote",
-    start: "2023-08",
+    start: "2023-09",
     end: "2025-05",
     highlights: [
-      "Built an informational website for a U.S. Air Force-funded research project on mob behavior, using HTML, CSS, and JavaScript. Later redesigned using React and Tailwind CSS.",
+      "Built an informational website for a Department of Defense-funded, multi-university research project on online mob formation and behavior, using HTML, CSS, and JavaScript. Later redesigned it with React and Tailwind CSS.",
       "Specialized in front-end design on a full-stack web tool that integrated a mob simulation program written in Python.",
       "Collaborated with a small team of developers using GitHub and participated in weekly progress update meetings led by my professor.",
     ],
