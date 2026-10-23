@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { Container } from "@/components/ui/container";
+import { Logo } from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
 
 export function SiteHeader() {
@@ -12,12 +13,7 @@ export function SiteHeader() {
           href="/"
           className="flex items-center gap-3 text-base font-semibold"
         >
-          <span
-            aria-hidden="true"
-            className="grid size-7 place-items-center rounded-sm bg-accent font-cjk text-lg leading-none font-black text-canvas"
-          >
-            L
-          </span>
+          <Logo className="size-7" />
           {siteConfig.name}
         </Link>
 
