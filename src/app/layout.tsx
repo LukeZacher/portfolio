@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 
-import { siteTitle } from "@/config/site";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SkipLink } from "@/components/layout/skip-link";
-import { siteConfig } from "@/config/site";
+import { siteConfig, siteTitle } from "@/config/site";
 import { fontVariables } from "@/styles/fonts";
 
 import "./globals.css";
