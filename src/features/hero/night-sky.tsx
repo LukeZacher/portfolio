@@ -13,7 +13,7 @@ export function NightSky() {
       aria-hidden="true"
       className="pointer-events-none absolute inset-0 -z-10"
     >
-      <div className="absolute inset-0 bg-radial-[ellipse_60%_55%_at_90%_80%] from-haze/15 to-transparent mask-[linear-gradient(to_bottom,black_55%,transparent)]" />
+      <div className="absolute inset-0 bg-radial-[ellipse_55%_50%_at_95%_80%] from-haze/15 to-transparent mask-[linear-gradient(to_bottom,black_55%,transparent)]" />
 
       <div className="hidden lg:block">
         {stars.map((star) => (
