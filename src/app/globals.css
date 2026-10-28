@@ -14,11 +14,68 @@
 
   --color-accent: #ff3d57; /* Neon red, used sparingly */
   --color-signal: #4fd1a5; /* Focus rings, status */
+  --color-neon: #ffd6dc; /* Neon tube core: a pale pink that glows red */
+  --color-haze: #7c5cff; /* Violet sky glow behind the hero stars */
 
   /* Hero name: scales smoothly from 76px on phones to 164px on desktop */
   --text-hero: clamp(4.75rem, 11.5vw, 10.25rem);
   --text-hero--line-height: 0.86;
   --text-hero--letter-spacing: -0.015em;
+
+  /* Neon sign: flickers on like a tube warming up, then stays lit */
+  --animate-neon-flicker: neon-flicker 1.6s linear 0.5s both;
+
+  /* Hero sky: each star pulses slowly; shooting stars streak by now and then */
+  --animate-twinkle: twinkle ease-in-out infinite alternate;
+  --animate-shooting-star: shooting-star ease-out infinite;
+
+  @keyframes neon-flicker {
+    0% {
+      opacity: 0;
+    }
+    8% {
+      opacity: 1;
+    }
+    10% {
+      opacity: 0.2;
+    }
+    14% {
+      opacity: 1;
+    }
+    22% {
+      opacity: 0.35;
+    }
+    26%,
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes twinkle {
+    from {
+      opacity: calc(var(--star-opacity) * 0.35);
+      scale: 0.7;
+    }
+    to {
+      opacity: var(--star-opacity);
+      scale: 1.15;
+    }
+  }
+
+  @keyframes shooting-star {
+    0% {
+      opacity: 0;
+      transform: rotate(-32deg) translateX(0);
+    }
+    1% {
+      opacity: 1;
+    }
+    6%,
+    100% {
+      opacity: 0;
+      transform: rotate(-32deg) translateX(-360px);
+    }
+  }
 }
 
 @theme inline {
@@ -29,6 +86,23 @@
 
   --shadow-glow-accent: 0 0 24px
     color-mix(in oklab, var(--color-accent) 45%, transparent);
+
+  --text-shadow-neon:
+    0 0 2px var(--color-accent), 0 0 6px var(--color-accent),
+    0 0 14px var(--color-accent),
+    0 0 28px color-mix(in oklab, var(--color-accent) 55%, transparent);
+
+  --shadow-star: 0 0 4px 1px
+    color-mix(in oklab, var(--color-fg) 45%, transparent);
+
+  --shadow-neon-tube:
+    0 0 3px var(--color-accent), 0 0 8px var(--color-accent),
+    inset 0 0 3px var(--color-accent),
+    inset 0 0 8px color-mix(in oklab, var(--color-accent) 60%, transparent);
+
+  --shadow-neon-panel:
+    inset 0 1px 0 color-mix(in oklab, var(--color-fg) 5%, transparent),
+    0 0 48px -6px color-mix(in oklab, var(--color-accent) 30%, transparent);
 }
 
 @layer base {
