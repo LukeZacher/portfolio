@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { MobileNav } from "@/components/layout/mobile-nav";
+import { OpenToWork } from "@/components/layout/open-to-work";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
@@ -33,13 +34,7 @@ export function SiteHeader() {
         </nav>
 
         {siteConfig.availableForWork && (
-          <p className="hidden items-center gap-2.5 font-mono text-xs tracking-wide md:flex">
-            <span
-              aria-hidden="true"
-              className="size-1.5 rounded-full bg-signal shadow-[0_0_8px_var(--color-signal)]"
-            />
-            Open to work
-          </p>
+          <OpenToWork className="hidden md:flex" />
         )}
 
         <MobileNav />
