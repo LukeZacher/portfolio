@@ -6,6 +6,7 @@ type SiteConfig = {
   name: string;
   role: string;
   location: string;
+  url: string;
   description: string;
   availableForWork: boolean;
   nav: readonly NavItem[];
@@ -16,6 +17,7 @@ export const siteConfig = {
   name: "Luke Zacher",
   role: "Full-Stack Developer",
   location: "Omaha, NE",
+  url: "https://lukezacher.com",
   description:
     "Full-stack developer in Omaha with degrees in computer science and graphic design, building production web apps with Angular, .NET, and SQL Server.",
   availableForWork: true,
@@ -36,3 +38,5 @@ export const siteConfig = {
     },
   ],
 } as const satisfies SiteConfig;
+
+export const siteTitle = `${siteConfig.name} — ${siteConfig.role}`;

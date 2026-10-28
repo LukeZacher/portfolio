@@ -1,10 +1,10 @@
 import type { MetadataRoute } from "next";
 
-import { siteConfig } from "@/config/site";
+import { siteConfig, siteTitle } from "@/config/site";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${siteConfig.name} — ${siteConfig.role}`,
+    name: siteTitle,
     short_name: siteConfig.name,
     description: siteConfig.description,
     start_url: "/",
