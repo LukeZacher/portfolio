@@ -27,11 +27,19 @@ export function About() {
           <h3 className="font-mono text-xs tracking-widest text-fg-muted uppercase">
             Education
           </h3>
-          <p className="mt-3 text-lg font-semibold">
-            B.S. Computer Science · B.A. Graphic Design
+          <p className="mt-3 flex flex-wrap items-center gap-x-2 text-lg font-semibold">
+            B.S. Computer Science
+            <span aria-hidden="true" className="text-fg-subtle">
+              ·
+            </span>
+            B.A. Graphic Design
           </p>
-          <p className="mt-1 text-fg-muted">
-            Creighton University · <time dateTime="2025">2025</time>
+          <p className="mt-1 flex flex-wrap items-center gap-x-2 text-fg-muted">
+            Creighton University
+            <span aria-hidden="true" className="text-fg-subtle">
+              ·
+            </span>
+            <time dateTime="2025">2025</time>
           </p>
         </div>
       </div>
